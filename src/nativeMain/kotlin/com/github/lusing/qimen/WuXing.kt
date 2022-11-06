@@ -1,7 +1,7 @@
 package com.github.lusing.qimen
 
 open class WuXing(xing: Int) {
-    val xing: Int
+    var xing: Int
 
     init {
         this.xing = (xing + 5) % 5
