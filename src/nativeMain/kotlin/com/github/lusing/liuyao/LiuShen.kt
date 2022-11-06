@@ -1,7 +1,38 @@
 package com.github.lusing.liuyao
 
-class LiuShen {
-    var ls: Int = 0
+import com.github.lusing.qimen.WuXing
+
+class LiuShen constructor(number: Int) : WuXing(number) {
+    val ls: Int
+
+    init {
+        this.ls = number % 6
+        when (this.ls) {
+            QINGLONG -> {
+                this.xing = MU
+            }
+
+            ZHUQUE -> {
+                this.xing = HUO
+            }
+
+            GOUCHEN -> {
+                this.xing = TU
+            }
+
+            TENGSHE -> {
+                this.xing = TU
+            }
+
+            BAIHU -> {
+                this.xing = JIN
+            }
+
+            XUANWU -> {
+                this.xing = SHUI
+            }
+        }
+    }
 
     companion object {
         const val QINGLONG = 0 // 青龍
@@ -12,20 +43,25 @@ class LiuShen {
         const val XUANWU = 5   // 玄武
     }
 
-    fun getName() :String{
+    fun getName(): String {
         when (this.ls) {
-            QINGLONG->
-            return "青龍"
-            ZHUQUE->
-            return "朱雀"
-            GOUCHEN->
-            return "勾陈"
-            TENGSHE->
-            return "腾蛇"
-            BAIHU->
-            return "白虎"
-            XUANWU->
-            return "玄武"
+            QINGLONG ->
+                return "青龍"
+
+            ZHUQUE ->
+                return "朱雀"
+
+            GOUCHEN ->
+                return "勾陈"
+
+            TENGSHE ->
+                return "腾蛇"
+
+            BAIHU ->
+                return "白虎"
+
+            XUANWU ->
+                return "玄武"
         }
         return "达拉崩吧"
     }
