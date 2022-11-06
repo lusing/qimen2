@@ -1,6 +1,6 @@
-import com.github.lusing.qimen.YinYang
+import com.github.lusing.qimen.QiMenEngine
 
 fun main() {
-    var y1 = YinYang(true)
-    println(y1.toString())
+    val eng = QiMenEngine()
+    eng.run()
 }
