@@ -4,7 +4,8 @@ import com.github.lusing.qimen.WuXing
 
 
 class Gua8 : WuXing {
-    val value: Int
+    var value: Int
+        set
 
     /*
      * 根据先天八卦数起卦
