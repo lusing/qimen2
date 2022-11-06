@@ -1,6 +1,6 @@
 package com.github.lusing.qimen
 
-class ShiShen() : LiuQin() {
+open class ShiShen() : LiuQin() {
     var shiShen = 0
         protected set
 
