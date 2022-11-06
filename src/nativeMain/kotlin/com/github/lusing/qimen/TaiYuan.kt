@@ -1,11 +1,10 @@
 package com.github.lusing.qimen
 
-
 /**
  * 求胎元
  * @author Louis
  */
-object TaiYuan {
+class TaiYuan {
     /**
      * 胎元求法：以月为主，生月天干进一位地支进三位即是胎元。
      * 所谓胎元，指的是受精怀胎的月份，说明一个人在怀孕的月份禀受天干地支及五行之气，以此作为预测命运的一种重要参考依据。

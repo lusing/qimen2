@@ -427,21 +427,16 @@ class BaZiEngine {
     }
 
     private val isRiZuoShangGuan: Boolean
-        private get() {
+        get() {
             val tg1 = tgs[DAY]!!.tianGan
             val dz1 = dzs[DAY]!!.diZhi
-            return if (((tg1 == TianGan.JIA && dz1 == DiZhi.ZI)
+            return ((tg1 == TianGan.JIA && dz1 == DiZhi.ZI)
                         || (tg1 == TianGan.YI && dz1 == DiZhi.SI)
                         || (tg1 == TianGan.GENG && dz1 == DiZhi.WU)
                         || (tg1 == TianGan.XIN && dz1 == DiZhi.HAI)
                         || (tg1 == TianGan.JIA && dz1 == DiZhi.WU)
                         || (tg1 == TianGan.GENG && dz1 == DiZhi.ZI)
                         || (tg1 == TianGan.GUI && dz1 == DiZhi.HAI))
-            ) {
-                true
-            } else {
-                false
-            }
         }
     private val isYinYangChaCuo: Boolean
         private get() {
