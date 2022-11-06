@@ -1,3 +1,6 @@
+import com.github.lusing.qimen.YinYang
+
 fun main() {
-    println("Hello, Kotlin/Native!")
+    var y1 = YinYang(true)
+    println(y1.toString())
 }
