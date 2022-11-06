@@ -49,10 +49,7 @@ class Gua64 {
     }
 
     fun getName(): String {
-        var value = this.value
-
-
-        when (value) {
+        when (this.value) {
             0b000000 -> return "坤为地"
             0b000001 -> return "地雷复"
             0b000010 -> return "地水师"
